@@ -40,6 +40,20 @@ mysql -h 136.116.99.61 -u root -p
 
 
 
+
+#ARCHIVOS A MODIFICAR (DENTRO DE LA VM CREADA):
+
+##ENNVARS:
+// PARA HACER LA CONEXION, EN HOST VA LA IP DE LA INSTANCIA CLOUD SQL, LO DEMAS TAL CUAL
+sudo nano /etc/apache2/envvars
+
+AGREGAR:
 export MYSQL_HOST=136.116.99.61
 export MYSQL_USER=root
 export MYSQL_PASSWORD=
+
+##INDEX.PHP:
+// BUSCAR
+sudo nano /var/www/html/practica/index.php   
+
+
