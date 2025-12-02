@@ -1,0 +1,45 @@
+
+SEMANA 13 
+
+IaaS y PaaS
+
+Despliegue de aplicacion en modo IaaS
+ - se hará instancia en php
+
+
+PRACTICA 1:
+
+Parte 1 (VM):
+ - crear instancia VM (N1 - g1 small)
+ - SO por defecto
+ - redes usar la red y subred creada, o crear nueva si no se tiene 
+
+
+ - sudo apt-get install -y apache2
+ - sudo apt-get install -y php8.2 libapache2-mod-php8.2 php8.2-mysql php8.2-mcrypt
+
+
+
+ - sudo sed -i 's/;extension=mysqli/extension=mysqli/g' /etc/php/8.2/apache2/php.ini
+ - sudo apt-get install -y git
+
+
+ - git clone https://github.com/aplicacionnubeuns/practicasql.git /var/www/html/practica
+
+
+
+
+
+
+MI IP PUBLICA DE CLOUD SQL : 136.116.99.61
+
+
+
+
+mysql -h 136.116.99.61 -u root -p
+
+
+
+export MYSQL_HOST=136.116.99.61
+export MYSQL_USER=root
+export MYSQL_PASSWORD=
